@@ -1,0 +1,28 @@
+body {
+  background-color: rgb(217, 255, 128);
+  color: rgb(0, 0, 0);
+}
+
+p {
+  color: aqua;
+  background-color: rgb(157, 255, 186);
+  border: 10px solid rgb(255, 118, 244);
+  border-radius: 10px;
+  box-shadow: 10px 7px rgb(0, 0, 0);
+  padding: 7px;
+}
+.btn {
+  display: inline-block;
+  padding: 10px 20px; /* เว้นระยะห่างด้านในปุ่ม (บน-ล่าง, ซ้าย-ขวา) */
+  background-color: #00ff55; /* สีพื้นหลังของปุ่ม (สีฟ้า) */
+  color: rgb(7, 6, 6); /* สีตัวอักษร */
+  text-decoration: none; /* เอาเส้นใต้ลิงก์ออก */
+  border-radius: 50px; /* ทำขอบมน */
+  font-weight: bold; /* ตัวหนา */
+  transition: background 0.3s; /* เอฟเฟกต์เวลาชี้ปุ่ม */
+}
+
+/* เอฟเฟกต์เวลาเอาเมาส์ไปชี้ (Hover) */
+.btn:hover {
+  background-color: #ff0000; /* เปลี่ยนเป็นสีฟ้าเข้มขึ้น */
+}
