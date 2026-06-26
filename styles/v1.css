@@ -1,28 +1,59 @@
 body {
-  background-color: rgb(217, 255, 128);
-  color: rgb(0, 0, 0);
+  background-color: #f7f1eb; /* สีครีมอ่อนๆ สบายตา */
+  color: #2c3e50; /* สีตัวอักษรเทาเข้ม (อ่านง่ายกว่าสีดำสนิท) */
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  margin: 0;
+  padding: 20px;
+  text-align: center; /* สั่งให้ข้อความและปุ่มทั้งหมดอยู่ตรงกลางหน้าจอ */
 }
 
-p {
-  color: aqua;
-  background-color: rgb(157, 255, 186);
-  border: 10px solid rgb(255, 118, 244);
-  border-radius: 10px;
-  box-shadow: 10px 7px rgb(0, 0, 0);
-  padding: 7px;
+/* 2. จัดการรูปภาพโปรไฟล์ */
+img {
+  width: 250px;
+  height: 250px;
+  object-fit: cover; /* ป้องกันไม่ให้รูปเบี้ยวหรือยืด */
+  border-radius: 50%; /* ปรับรูปให้เป็นวงกลมมนๆ สไตล์มินิมอล */
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05); /* ใส่เงาละมุนๆ */
+  margin: 20px auto;
+  display: block;
 }
+
+/* 3. ปรับแต่งส่วนหัวข้อหลัก (เช่นคำว่า Sarawut หรือ My First Project) */
+h1 {
+  font-size: 24px;
+  color: #4a3f35;
+  margin-bottom: 25px;
+}
+
+/* 4. ปรับแต่งกล่องข้อความ (แท็ก p) ให้ดูเหมือนการ์ดสะอาดตา */
+p {
+  background-color: #ffffff; /* พื้นหลังกล่องสีขาวสะอาด */
+  color: #4a5568;
+  max-width: 600px; /* จำกัดความกว้างไม่ให้กล่องยืดเต็มจอเกินไป */
+  margin: 12px auto; /* จัดกล่องให้อยู่ตรงกลางหน้าจอ */
+  padding: 15px 20px; /* เพิ่มพื้นที่ว่างข้างในกล่องให้หายใจสะดวก */
+  border-radius: 12px; /* ความมนของมุมกล่อง */
+  border: 1px solid #e2e8f0; /* เส้นขอบบางๆ สีเทาอ่อน (ดูแพงกว่าเส้นสีดำหนาๆ) */
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.02); /* เงาจางๆ */
+  text-align: left; /* ให้ข้อความข้างในกล่องชิดซ้ายเพื่อให้อ่านง่าย */
+}
+
+/* 5. ออกแบบปุ่มลิงก์เมนู (.btn) ให้ดูเรียบหรูและกดง่าย */
 .btn {
   display: inline-block;
-  padding: 10px 20px; /* เว้นระยะห่างด้านในปุ่ม (บน-ล่าง, ซ้าย-ขวา) */
-  background-color: #00ff55; /* สีพื้นหลังของปุ่ม (สีฟ้า) */
-  color: rgb(7, 6, 6); /* สีตัวอักษร */
+  margin: 10px 6px;
+  padding: 10px 24px;
+  background-color: #8e7f70; /* สีน้ำตาลอมเทาสุภาพ สบายตา */
+  color: #ffffff; /* ตัวอักษรสีขาว */
   text-decoration: none; /* เอาเส้นใต้ลิงก์ออก */
-  border-radius: 50px; /* ทำขอบมน */
-  font-weight: bold; /* ตัวหนา */
-  transition: background 0.3s; /* เอฟเฟกต์เวลาชี้ปุ่ม */
+  border-radius: 25px; /* ทำปุ่มให้มนโค้ง */
+  font-size: 14px;
+  font-weight: bold;
+  transition: all 0.1s ease; /* เติมเอฟเฟกต์ตอนขยับ */
 }
 
-/* เอฟเฟกต์เวลาเอาเมาส์ไปชี้ (Hover) */
+/* เอฟเฟกต์เวลาเอาเมาส์ไปชี้ที่ปุ่ม (Hover) */
 .btn:hover {
-  background-color: #ff0000; /* เปลี่ยนเป็นสีฟ้าเข้มขึ้น */
+  background-color: #6e6154; /* สีจะเข้มขึ้นเล็กน้อยเวลาชี้ */
+  transform: translateY(-2px); /* ปุ่มจะลอยขึ้นมานิดนึงดูมีมิติ */
 }
