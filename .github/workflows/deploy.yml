@@ -1,7 +1,7 @@
 name: PHP Deploy Pipeline
 on:
 push:
-branches: [ &quot;main&quot; ]
+branches: [ "main" ]
 
 jobs:
 deploy:
