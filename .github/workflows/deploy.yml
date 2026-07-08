@@ -69,5 +69,5 @@ with:
             git reset --hard origin/main
 
 
-            # composer install --no-dev
---optimize-autoloader (ถ้ามี)
+            # composer install --no-dev --optimize-autoloader (ถ้ามี)
+                        
